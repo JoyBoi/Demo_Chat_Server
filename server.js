@@ -48,7 +48,7 @@ async function startServer() {
         const options = {
             // path: "/socket.io",
             cors: {
-                origin: "http://localhost:8080",
+                origin: "*",
             },
         };
         const io = require("socket.io")(httpServer, options);
