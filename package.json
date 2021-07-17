@@ -1,22 +1,23 @@
 {
-  "name": "server",
-  "version": "1.0.0",
-  "description": "Backend for demoChat",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon index.js"
-  },
-  "author": "JoyBoy",
-  "license": "ISC",
-  "dependencies": {
-    "apollo-server-express": "^2.25.2",
-    "express": "^4.17.1",
-    "graphql": "^15.5.1",
-    "mongoose": "^5.13.2",
-    "socket.io": "^4.1.2"
-  },
-  "devDependencies": {
-    "nodemon": "^2.0.9"
-  }
+    "name": "server",
+    "version": "1.0.0",
+    "description": "Backend for demoChat",
+    "main": "server.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "dev": "nodemon server.js",
+        "start": "node server.js"
+    },
+    "author": "JoyBoy",
+    "license": "ISC",
+    "dependencies": {
+        "apollo-server-express": "^2.25.2",
+        "express": "^4.17.1",
+        "graphql": "^15.5.1",
+        "mongoose": "^5.13.2",
+        "socket.io": "^4.1.2"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.9"
+    }
 }
