@@ -134,6 +134,7 @@ async function startServer() {
 
         httpServer.listen(PORT, () => console.log(`Socket at: ${PORT}`));
 
+        return httpServer
         // app.use((req, res) => {
         //     res.send("From Express server");
         // });
@@ -143,4 +144,6 @@ async function startServer() {
         console.log(error);
     }
 }
-startServer();
+const app = await startServer();
+
+export default app
